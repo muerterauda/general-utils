@@ -4,7 +4,7 @@ class Prints:
     @staticmethod
     def print_list(list_print: list, end_attribute='\n'):
         if list_print is not None:
-            print(f'{end_attribute.join(list_print)}')
+            print(f'{end_attribute.join(str(list_print))}')
         if end_attribute == '':
             print()
 

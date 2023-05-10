@@ -50,8 +50,8 @@ class bcolors:
     @staticmethod
     def format_text(text, color, highlights=None, attributes: list = None, end: bool = False):
         return f'{color}{highlights if highlights is not None else ""}' \
-               f'{"".join(attributes) if len(attributes) > 0 else ""}' \
-               f'{text}{end if end is not None else ""}'
+               f'{"".join(attributes) if attributes is not None and len(attributes) > 0 else ""}' \
+               f'{text}{bcolors.ENDC if end is not None else ""}'
 
 
 class wcolors:
