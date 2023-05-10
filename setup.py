@@ -8,7 +8,7 @@ with open(path.join(here, 'README.md'), "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="general-utils-juan-palma-borda",
-    version="0.1.1",
+    version="0.1.2",
     author='Juan Palma Borda',
     author_email='juanpalmaborda@hotmail.com',
     description='Group of general utils from different projects',
