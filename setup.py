@@ -14,9 +14,9 @@ setuptools.setup(
     description='Group of general utils from different projects',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/muerterauda/",
+    url="https://github.com/muerterauda/general-utils",
     project_urls={
-        "Bug Tracker": "https://github.com/muerterauda//issues",
+        "Bug Tracker": "https://github.com/muerterauda/general-utils/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
