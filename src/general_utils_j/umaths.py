@@ -1,14 +1,15 @@
 import math
 
 
-def map_value(x, in_min, in_max, out_min, out_max, none_return=True):
-    if x > in_max:
-        if none_return:
-            return None
-        raise Exception('Valor no incluido')
+def map_value(x, in_min, in_max, out_min, out_max,
+              raise_error=False, returned_no_error_min=None, returned_no_error_max=None):
     if x < in_min:
-        if none_return:
-            return None
+        if not raise_error:
+            return returned_no_error_min
+        raise Exception('Valor no incluido')
+    if x > in_max:
+        if not raise_error:
+            return returned_no_error_max
         raise Exception('Valor no incluido')
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 
