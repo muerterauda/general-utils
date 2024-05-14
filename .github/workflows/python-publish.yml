@@ -6,8 +6,8 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package Mongo Manager to PyPi
-run-name: Upload MongoManager ${{ github.ref_name }} to PyPi by @${{ github.actor }}
+name: Upload Python Package General Utils to PyPi
+run-name: Upload Gerneral Utils ${{ github.ref_name }} to PyPi by @${{ github.actor }}
 on:
   push:
     branches:
@@ -76,7 +76,7 @@ jobs:
           name: mongo_manager
           path: dist/
       - name: Sign the dists with Sigstore
-        uses: sigstore/gh-action-sigstore-python@v1.2.3
+        uses: sigstore/gh-action-sigstore-python@v2.1.1
         with:
           inputs: >-
             ./dist/*.tar.gz
