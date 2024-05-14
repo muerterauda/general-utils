@@ -14,6 +14,10 @@ def map_value(x, in_min, in_max, out_min, out_max,
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
 
 
+def map_value_no_bounds(x, in_min, in_max, out_min, out_max):
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+
+
 class Incremental_math_operations:
 
     @staticmethod

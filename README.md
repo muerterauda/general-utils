@@ -1,4 +1,4 @@
-# General Utils (0.2.0)
+# General Utils (0.2.1)
 
 Group of general utils from different projects.
 
